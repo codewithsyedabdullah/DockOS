@@ -154,7 +154,7 @@ export default function Mail({ windowId }) {
     {
       id: 8,
       sender: "Zainab Tariq",
-      avatar: "/icons/PngItem_6304991.png",
+      avatar: "/icons/PngItem_4082636.png",
       subject: "Fun memories",
       date: "2/21/25",
       excerpt: "Check out this photo of the group from last summer. Can't believe it has been a year already...",
