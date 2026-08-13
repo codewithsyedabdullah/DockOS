@@ -63,7 +63,7 @@ export default function Mail({ windowId }) {
   const isDarkMode = useAppStore((s) => s.isDarkMode);
   const [selectedMailbox, setSelectedMailbox] = useState("inbox");
   const [activeCategory, setActiveCategory] = useState("primary");
-  const [selectedEmailId, setSelectedEmailId] = useState(3); // Default selected Orkun email
+  const [selectedEmailId, setSelectedEmailId] = useState(3); // Default selected Ali Raza email
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   // Mock Mailbox counts
@@ -73,50 +73,50 @@ export default function Mail({ windowId }) {
   const emails = [
     {
       id: 1,
-      sender: "Xiaomeng Zhong",
+      sender: "Ayesha Khan",
       avatar: "/icons/PngItem_5031003.png",
       subject: "Dinner at the Ricos'",
       date: "3/24/25",
-      excerpt: "Dear Danny, Thanks again for the delicious evening. It was so much fun making and eating...",
+      excerpt: "Dear Abdullah, Thanks again for the delicious evening. It was so much fun making and eating...",
       isUnread: true,
       hasAttachment: true,
       category: "primary",
-      content: `Hello Danny,\n\nThanks again for the delicious evening. It was so much fun making and eating dinner with you and the rest of the crew! Let's do it again next month.\n\nBest,\nXiaomeng`
+      content: `Hello Abdullah,\n\nThanks again for the delicious evening. It was so much fun making and eating dinner with you and the rest of the crew! Let's do it again next month.\n\nBest,\nAyesha`
     },
     {
       id: 2,
-      sender: "Jenny Court",
+      sender: "Fatima Noor",
       avatar: "/icons/PngItem_4082636.png",
       subject: "Walkthrough",
       date: "3/20/25",
-      excerpt: "Hi Danny and Ashley, I've just completed a walkthrough of 212 Opal and wanted to share...",
+      excerpt: "Hi Abdullah and Bilal Ahmed, I've just completed a walkthrough of 212 Opal and wanted to share...",
       isUnread: true,
       category: "primary",
-      content: `Hi Danny and Ashley,\n\nI've just completed a walkthrough of 212 Opal and wanted to share the findings report with you. Everything looks structurally sound, and the layout works perfectly.\n\nCheers,\nJenny`
+      content: `Hi Abdullah and Bilal Ahmed,\n\nI've just completed a walkthrough of 212 Opal and wanted to share the findings report with you. Everything looks structurally sound, and the layout works perfectly.\n\nCheers,\nFatima`
     },
     {
       id: 3,
-      sender: "Orkun Kucuksevim",
+      sender: "Ali Raza",
       avatar: "/icons/PngItem_4608119.png",
       subject: "Day trip idea",
       date: "3/17/25",
-      excerpt: "Hello Danny, Here's more info on that park I was telling you about. Definitely go if you have the...",
+      excerpt: "Hello Abdullah, Here's more info on that park I was telling you about. Definitely go if you have the...",
       isUnread: false,
       isReplied: true,
       category: "primary",
       hasMap: true,
-      content: `Hello Danny,\n\nHere's more info on that park I was telling you about. Definitely go if you have the chance!`
+      content: `Hello Abdullah,\n\nHere's more info on that park I was telling you about. Definitely go if you have the chance!`
     },
     {
       id: 4,
-      sender: "Po-Chun Yeh",
+      sender: "Hamza Sheikh",
       avatar: "/icons/PngItem_6304991.png",
       subject: "Lunch call?",
       date: "3/14/25",
-      excerpt: "Hey Danny, Think you'll be free for a lunchtime chat sometime soon? I've got Thursday, Marc...",
+      excerpt: "Hey Abdullah, Think you'll be free for a lunchtime chat sometime soon? I've got Thursday, Marc...",
       isUnread: false,
       category: "primary",
-      content: `Hey Danny,\n\nThink you'll be free for a lunchtime chat sometime soon? I've got Thursday, March 20th open, or we could do early next week. Let me know what works.\n\nBest,\nPo-Chun`
+      content: `Hey Abdullah,\n\nThink you'll be free for a lunchtime chat sometime soon? I've got Thursday, March 20th open, or we could do early next week. Let me know what works.\n\nBest,\nHamza`
     },
     {
       id: 5,
@@ -124,36 +124,36 @@ export default function Mail({ windowId }) {
       avatar: "/icons/PngItem_6452863.png",
       subject: "Pick up from airport?",
       date: "3/10/25",
-      excerpt: "Hi Danny! Hope all's well with you. I'm coming home tomorrow and was wondering if you mig...",
+      excerpt: "Hi Abdullah! Hope all's well with you. I'm coming home tomorrow and was wondering if you mig...",
       isUnread: false,
       category: "primary",
-      content: `Hi Danny!\n\nHope all's well with you. I'm coming home tomorrow on flight AA204 and was wondering if you might be free to pick me up around 4 PM? Let me know.\n\nThanks,\nAli`
+      content: `Hi Abdullah!\n\nHope all's well with you. I'm coming home tomorrow on flight AA204 and was wondering if you might be free to pick me up around 4 PM? Let me know.\n\nThanks,\nAli`
     },
     {
       id: 6,
-      sender: "Rich Dinh",
+      sender: "Bilal Ahmed",
       avatar: "/icons/PngItem_4608119.png",
       subject: "National Parks in Southern California",
       date: "3/6/25",
-      excerpt: "Hi Danny, I can't wait for our upcoming Joshua Tree National Park trip. Check out this guide a...",
+      excerpt: "Hi Abdullah, I can't wait for our upcoming Joshua Tree National Park trip. Check out this guide a...",
       isUnread: false,
       category: "primary",
-      content: `Hi Danny,\n\nI can't wait for our upcoming Joshua Tree National Park trip. Check out this guide and let me know which trails you want to hike first.\n\nTalk soon,\nRich`
+      content: `Hi Abdullah,\n\nI can't wait for our upcoming Joshua Tree National Park trip. Check out this guide and let me know which trails you want to hike first.\n\nTalk soon,\nBilal`
     },
     {
       id: 7,
-      sender: "Elena Lanot",
+      sender: "Zara Malik",
       avatar: "/icons/PngItem_5031003.png",
       subject: "Interpretation job follow-up",
       date: "3/3/25",
-      excerpt: "Hey Danny, Thanks much for taking time to meet with me last week—super cool to hear a...",
+      excerpt: "Hey Abdullah, Thanks much for taking time to meet with me last week—super cool to hear a...",
       isUnread: false,
       category: "primary",
-      content: `Hey Danny,\n\nThanks much for taking time to meet with me last week—super cool to hear about your interpretation work. Let's stay in touch.\n\nWarmly,\nElena`
+      content: `Hey Abdullah,\n\nThanks much for taking time to meet with me last week—super cool to hear about your interpretation work. Let's stay in touch.\n\nWarmly,\nZara`
     },
     {
       id: 8,
-      sender: "Rigo Rangel",
+      sender: "Zainab Tariq",
       avatar: "/icons/PngItem_6304991.png",
       subject: "Fun memories",
       date: "2/21/25",
@@ -161,7 +161,7 @@ export default function Mail({ windowId }) {
       isUnread: false,
       hasAttachment: true,
       category: "primary",
-      content: `Hi Danny,\n\nCheck out this photo of the group from last summer. Can't believe it has been a year already! Looking forward to seeing everyone again soon.\n\nBest,\nRigo`
+      content: `Hi Abdullah,\n\nCheck out this photo of the group from last summer. Can't believe it has been a year already! Looking forward to seeing everyone again soon.\n\nBest,\nZainab`
     }
   ];
 
@@ -600,9 +600,9 @@ export default function Mail({ windowId }) {
               <div className="flex items-center justify-between text-[11px] text-gray-400">
                 <div className="flex items-center gap-2">
                   <div className="w-5 h-5 rounded-full overflow-hidden bg-gray-200 p-0.5">
-                    <img src="/icons/PngItem_4409921.png" alt="Danny Rico" className="w-full h-full object-contain" />
+                    <img src="/icons/PngItem_4409921.png" alt="Abdullah Yaqoob" className="w-full h-full object-contain" />
                   </div>
-                  <span className="font-bold text-gray-500">Danny Rico</span>
+                  <span className="font-bold text-gray-500">Abdullah Yaqoob</span>
                 </div>
                 <span>11:09 AM</span>
               </div>
