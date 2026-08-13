@@ -109,7 +109,7 @@ export default function PhoneApp({ windowId }) {
     {
       id: "chris",
       name: "Zainab Tariq",
-      avatar: "/icons/PngItem_4082636.png",
+      avatar: "/icons/fox.png",
       avatarBg: "bg-red-100 dark:bg-red-950/60",
       device: "mobile",
       type: "mobile",
@@ -203,7 +203,7 @@ export default function PhoneApp({ windowId }) {
 
   // Favourites list
   const favourites = [
-    { id: "chris", name: "Zainab Tariq", avatar: "/icons/PngItem_4082636.png", bgClass: "bg-red-100 dark:bg-red-950/60", iconType: "phone" },
+    { id: "chris", name: "Zainab Tariq", avatar: "/icons/fox.png", bgClass: "bg-red-100 dark:bg-red-950/60", iconType: "phone" },
     { id: "brian", name: "Zara Malik", avatar: "/icons/PngItem_4409921.png", bgClass: "bg-amber-100 dark:bg-amber-950/60", iconType: "message" },
     { id: "mayuri", name: "Ali Raza", avatar: "/icons/PngItem_4608119.png", bgClass: "bg-purple-100 dark:bg-purple-950/60", iconType: "message" },
     { id: "rigo_fav", name: "Ayesha Khan", avatar: "/icons/PngItem_5031003.png", bgClass: "bg-sky-100 dark:bg-sky-950/60", iconType: "video" }

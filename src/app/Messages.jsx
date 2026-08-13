@@ -75,7 +75,7 @@ export default function Messages({ windowId }) {
   // Mock Pinned Contacts
   const pinnedContacts = [
     { id: "ashley", name: "Fatima Noor", avatar: "/icons/PngItem_4082636.png", bg: "bg-red-100 dark:bg-red-950/40", tip: "Did the kids finish their homework?", hasUnread: true, isImage: true },
-    { id: "dawn", name: "Mariam Siddiqui", avatar: "/icons/PngItem_4409921.png", bg: "bg-amber-100 dark:bg-amber-950/40", isImage: true },
+    { id: "dawn", name: "Zara Malik", avatar: "/icons/PngItem_4409921.png", bg: "bg-amber-100 dark:bg-amber-950/40", isImage: true },
     { id: "rico", name: "Ali Raza", avatar: "/icons/PngItem_4608119.png", bg: "bg-sky-100 dark:bg-sky-950/40", hasUnread: true, isImage: true },
     { id: "olivia", name: "Ayesha Khan", avatar: "/icons/PngItem_5031003.png", bg: "bg-purple-100 dark:bg-purple-950/40", badge: "🌈", hasUnread: true, isImage: true },
     { id: "will", name: "Hamza Sheikh", avatar: "/icons/PngItem_6304991.png", bg: "bg-green-100 dark:bg-green-950/40", badge: "❤️", isImage: true },
@@ -182,7 +182,7 @@ export default function Messages({ windowId }) {
     {
       id: "nisha",
       name: "Zara Malik",
-      avatar: "/icons/PngItem_5031003.png",
+      avatar: "/icons/PngItem_4409921.png",
       avatarBg: "bg-teal-100 dark:bg-teal-950/40",
       isImage: true,
       date: "Friday",

@@ -120,30 +120,30 @@ export default function Mail({ windowId }) {
     },
     {
       id: 5,
-      sender: "Ali Raza",
+      sender: "Bilal Ahmed",
       avatar: "/icons/PngItem_6452863.png",
       subject: "Pick up from airport?",
       date: "3/10/25",
       excerpt: "Hi Abdullah! Hope all's well with you. I'm coming home tomorrow and was wondering if you mig...",
       isUnread: false,
       category: "primary",
-      content: `Hi Abdullah!\n\nHope all's well with you. I'm coming home tomorrow on flight AA204 and was wondering if you might be free to pick me up around 4 PM? Let me know.\n\nThanks,\nAli`
+      content: `Hi Abdullah!\n\nHope all's well with you. I'm coming home tomorrow on flight AA204 and was wondering if you might be free to pick me up around 4 PM? Let me know.\n\nThanks,\nBilal`
     },
     {
       id: 6,
-      sender: "Bilal Ahmed",
+      sender: "Ali Raza",
       avatar: "/icons/PngItem_4608119.png",
       subject: "National Parks in Southern California",
       date: "3/6/25",
       excerpt: "Hi Abdullah, I can't wait for our upcoming Joshua Tree National Park trip. Check out this guide a...",
       isUnread: false,
       category: "primary",
-      content: `Hi Abdullah,\n\nI can't wait for our upcoming Joshua Tree National Park trip. Check out this guide and let me know which trails you want to hike first.\n\nTalk soon,\nBilal`
+      content: `Hi Abdullah,\n\nI can't wait for our upcoming Joshua Tree National Park trip. Check out this guide and let me know which trails you want to hike first.\n\nTalk soon,\nAli`
     },
     {
       id: 7,
       sender: "Zara Malik",
-      avatar: "/icons/PngItem_5031003.png",
+      avatar: "/icons/PngItem_4409921.png",
       subject: "Interpretation job follow-up",
       date: "3/3/25",
       excerpt: "Hey Abdullah, Thanks much for taking time to meet with me last week—super cool to hear a...",
@@ -154,7 +154,7 @@ export default function Mail({ windowId }) {
     {
       id: 8,
       sender: "Zainab Tariq",
-      avatar: "/icons/PngItem_4082636.png",
+      avatar: "/icons/fox.png",
       subject: "Fun memories",
       date: "2/21/25",
       excerpt: "Check out this photo of the group from last summer. Can't believe it has been a year already...",
@@ -600,7 +600,7 @@ export default function Mail({ windowId }) {
               <div className="flex items-center justify-between text-[11px] text-gray-400">
                 <div className="flex items-center gap-2">
                   <div className="w-5 h-5 rounded-full overflow-hidden bg-gray-200 p-0.5">
-                    <img src="/icons/PngItem_4409921.png" alt="Abdullah Yaqoob" className="w-full h-full object-contain" />
+                    <img src="/icons/panda.png" alt="Abdullah Yaqoob" className="w-full h-full object-contain" />
                   </div>
                   <span className="font-bold text-gray-500">Abdullah Yaqoob</span>
                 </div>
