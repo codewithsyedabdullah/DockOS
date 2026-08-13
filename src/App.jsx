@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+﻿import { useState, useEffect, useRef, useCallback } from "react";
 import PowerScreen from "./layouts/PowerScreen";
 import LockScreen from "./layouts/LockScreen";
 import SetupScreen from "./layouts/SetupScreen";
@@ -164,7 +164,7 @@ export default function App() {
         }} />}
         {stage === "setup" && <SetupScreen 
           goNext={(lang) => {
-            localStorage.setItem('setup_lang', lang || "English (UK)");
+            localStorage.setItem('setup_lang', lang || "English (Pakistan)");
             setStage("region");
           }} 
           onSkip={() => {
@@ -173,17 +173,17 @@ export default function App() {
           }}
         />}
         {stage === "region" && <RegionScreen goNext={(country) => {
-          localStorage.setItem('setup_country', country || "United Kingdom");
+          localStorage.setItem('setup_country', country || "Pakistan");
           setStage("written");
         }} goBack={() => setStage("setup")} />}
         {stage === "written" && <WrittenScreen 
-          selectedLanguage={localStorage.getItem('setup_lang') || "English (UK)"} 
-          selectedCountry={localStorage.getItem('setup_country') || "United Kingdom"} 
+          selectedLanguage={localStorage.getItem('setup_lang') || "English (Pakistan)"} 
+          selectedCountry={localStorage.getItem('setup_country') || "Pakistan"} 
           goNext={() => setStage("timezone")} 
           goBack={() => setStage("region")} 
         />}
         {stage === "timezone" && <TimezoneScreen 
-          selectedCountry={localStorage.getItem('setup_country') || "United Kingdom"} 
+          selectedCountry={localStorage.getItem('setup_country') || "Pakistan"} 
             goNext={() => setStage("dataprivacy")}
             goBack={() => setStage("written")}
           />}

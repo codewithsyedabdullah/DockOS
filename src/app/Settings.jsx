@@ -4,52 +4,58 @@ import { motion } from "framer-motion";
 // Overview Tab Content
 const OverviewTab = () => (
   <div className="flex items-start gap-8 py-8 px-8 justify-center max-w-2xl mx-auto">
-    {/* macOS Logo */}
+    {/* DockOS Logo */}
     <div className="shrink-0">
-      <img 
-        src="https://www.iclarified.com/images/news/97556/465566/465566.jpg" 
-        alt="macOS Sequoia" 
-        className="w-32 h-32 rounded-full object-cover"
-      />
+      <div className="w-32 h-32 rounded-full flex items-center justify-center"
+        style={{ background: "linear-gradient(135deg, rgba(90,200,250,0.35), rgba(255,45,85,0.25))" }}>
+        <svg viewBox="0 0 24 28" className="w-16 h-16 text-white" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="1.8" y="2.5" width="20.4" height="17.5" rx="3.5" />
+          <line x1="1.8" y1="8.5" x2="22.2" y2="8.5" />
+          <circle cx="5.6" cy="5.6" r="0.7" fill="currentColor" stroke="none" />
+          <circle cx="8.6" cy="5.6" r="0.7" fill="currentColor" stroke="none" />
+          <circle cx="11.6" cy="5.6" r="0.7" fill="currentColor" stroke="none" />
+          <rect x="4.5" y="12" width="15" height="4.5" rx="2.2" />
+        </svg>
+      </div>
     </div>
 
     {/* System Information */}
     <div className="flex-1 text-sm">
-      <h1 className="text-2xl font-normal text-white mb-0.5">macOS Tahoe</h1>
-      <p className="text-white/50 text-xs mb-6">Version 15.2.0 (24C101)</p>
+      <h1 className="text-2xl font-normal text-white mb-0.5">DockOS</h1>
+      <p className="text-white/50 text-xs mb-6">Version 1.0.0 (26D801)</p>
 
       <div className="space-y-1.5">
         <div className="flex">
-          <span className="text-white/50 w-28">iMac</span>
-          <span className="text-white/90">(Retina 5K, 2019) - iMac19,1</span>
+          <span className="text-white/50 w-28">Machine</span>
+          <span className="text-white/90">Browser Desktop</span>
         </div>
         <div className="flex">
-          <span className="text-white/50 w-28">Processor</span>
-          <span className="text-white/90">Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz</span>
+          <span className="text-white/50 w-28">Engine</span>
+          <span className="text-white/90">React 19 / Vite 7</span>
         </div>
         <div className="flex">
           <span className="text-white/50 w-28">Memory</span>
-          <span className="text-white/90">16 GB DDR4</span>
+          <span className="text-white/90">Client-side only</span>
         </div>
         <div className="flex">
           <span className="text-white/50 w-28">Startup Disk</span>
-          <span className="text-white/90">Sequoia</span>
+          <span className="text-white/90">LocalStorage</span>
         </div>
         <div className="flex">
           <span className="text-white/50 w-28">Display</span>
-          <span className="text-white/90">ARIRANG (3840 x 2160)</span>
+          <span className="text-white/90">Fullscreen, any resolution</span>
         </div>
         <div className="flex">
           <span className="text-white/50 w-28">Graphics</span>
-          <span className="text-white/90">UHD Graphics 630 1536 MB (Metal 3)</span>
+          <span className="text-white/90">CSS backdrop-filter + WebGL</span>
         </div>
         <div className="flex">
           <span className="text-white/50 w-28">Serial Number</span>
-          <span className="text-white/90"></span>
+          <span className="text-white/90">DOCKOS-0001-ABD</span>
         </div>
         <div className="flex">
           <span className="text-white/50 w-28">Bootloader</span>
-          <span className="text-white/90">OpenCore 1.0.3 (Release)</span>
+          <span className="text-white/90">Vite dev server</span>
         </div>
       </div>
 

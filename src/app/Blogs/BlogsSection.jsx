@@ -150,15 +150,55 @@ const SupernovaSketch = () => (
 const defaultNotes = [
   {
     id: 10,
-    title: "Hello, Welcome to Mac",
-    subtitle: "1 photo",
-    content: "Welcome to your new macOS simulator! Experience the premium design, fluid animations, and custom integrated applications.",
-    date: "6/9/26",
+    title: "Welcome to DockOS",
+    subtitle: "Build log",
+    content: "This is DockOS, a macOS desktop simulator I built from scratch to live in the browser. Boot sequence, setup wizard, lock screen, draggable windows, a working file system, and a dock that magnifies on hover. Everything is client-side React state. The whole thing runs with zero backend.",
+    date: "8/13/26",
     pinned: true,
     folder: "notes",
     thumbnail: "/images/macos27.png",
     images: ["/images/macos27.png"],
-    updatedAt: "2026-06-09T10:00:00Z"
+    updatedAt: "2026-08-13T10:00:00Z"
+  },
+  {
+    id: 11,
+    title: "What I learned building window management",
+    subtitle: "DockOS",
+    content: "The hardest part of DockOS was never the visuals. It's z-index stacking, focus handling, drag + resize coordination, and making sure a maximized window restores to the exact spot it was. I ended up centralizing everything in a Zustand store: windows, focus, minimized state, and z-order. Treating each app as an isolated component that only talks to the store kept the whole thing sane.",
+    date: "8/13/26",
+    pinned: false,
+    folder: "notes",
+    updatedAt: "2026-08-13T09:30:00Z"
+  },
+  {
+    id: 12,
+    title: "DockOS feature backlog",
+    subtitle: "Ideas",
+    content: "Next up: a real terminal app with a tiny command set, multi-display wallpapers, window tiling shortcuts, and a widget API so apps can register their own widgets. Also thinking about a WebGL depth wallpaper engine that reacts to mouse position.",
+    date: "8/12/26",
+    pinned: false,
+    folder: "notes",
+    updatedAt: "2026-08-12T18:00:00Z"
+  },
+  {
+    id: 13,
+    title: "Why glassmorphism works",
+    subtitle: "Design notes",
+    content: "Native-feeling glass is mostly backdrop-filter blur, a 1px inner border with low alpha, and a soft shadow with an inset highlight. Real macOS layers the blur radius by depth: menu bar 20px, panels 30px, the dock about 25px. Get those layers right and the whole desktop reads as physical.",
+    date: "8/11/26",
+    pinned: false,
+    folder: "notes",
+    updatedAt: "2026-08-11T14:00:00Z"
+  },
+  {
+    id: 14,
+    title: "Structuring a desktop as a shell",
+    subtitle: "Architecture",
+    content: "A desktop OS is really a shell around small, isolated apps. I followed that in code: each app lives in src/app, registers itself with the store, and the window shell handles drag, resize, minimize and focus. Adding a new app is 20 lines. That separation is the whole trick.",
+    date: "8/10/26",
+    pinned: false,
+    folder: "notes",
+    updatedAt: "2026-08-10T16:00:00Z"
   }
 ];
 
