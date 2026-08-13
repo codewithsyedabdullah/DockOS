@@ -1,20 +1,20 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function SetupScreen({ goNext, onSkip }) {
   const languages = [
     "English (UK)",
     "English",
-    "FranÃ§ais",
+    "Français",
     "Deutsch",
-    "EspaÃ±ol",
+    "Español",
     "English (Australia)",
     "English (India)",
-    "ç®€ä½“ä¸­æ–‡",
-    "ç¹é«”ä¸­æ–‡",
-    "ç¹é«”ä¸­æ–‡ (é¦™æ¸¯)",
-    "æ—¥æœ¬èªž",
-    "EspaÃ±ol (AmÃ©rica Latina)"
+    "简体中文",
+    "繁體中文",
+    "繁體中文 (香港)",
+    "日本語",
+    "Español (América Latina)"
   ];
   
   const [selectedLanguage, setSelectedLanguage] = useState("English (UK)");

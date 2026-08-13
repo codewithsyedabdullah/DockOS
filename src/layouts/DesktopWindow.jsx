@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Dock from "../components/Dock";
 import AppWindow from "../components/AppWindow";
 import { useAppStore } from "../store/Appstore";
@@ -997,7 +997,7 @@ export default function Desktop({ setStage, isLocked = false }) {
                       </svg>
                       <span>Copy</span>
                     </div>
-                    <span className="text-[10px] text-gray-400/85 group-hover:text-white/80">âŒ˜C</span>
+                    <span className="text-[10px] text-gray-400/85 group-hover:text-white/80">⌘C</span>
                   </button>
 
                   <button
@@ -1019,7 +1019,7 @@ export default function Desktop({ setStage, isLocked = false }) {
                       </svg>
                       <span>Cut (Move)</span>
                     </div>
-                    <span className="text-[10px] text-gray-400/85 group-hover:text-white/80">âŒ˜X</span>
+                    <span className="text-[10px] text-gray-400/85 group-hover:text-white/80">⌘X</span>
                   </button>
 
                   <div className={`border-t my-1.5 ${isDarkMode ? "border-white/5" : "border-gray-200/60"}`}></div>
@@ -1063,7 +1063,7 @@ export default function Desktop({ setStage, isLocked = false }) {
                       </svg>
                       <span>Delete</span>
                     </div>
-                    <span className="text-[10px] text-red-400 group-hover:text-white/80">âŒ˜âŒ«</span>
+                    <span className="text-[10px] text-red-400 group-hover:text-white/80">⌘⌫</span>
                   </button>
                 </div>
               </motion.div>

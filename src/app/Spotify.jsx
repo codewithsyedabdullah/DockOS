@@ -1,4 +1,4 @@
-﻿import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useAppStore, audioInstance } from "../store/Appstore";
 import { songs } from "../constants/songs";
 import { 
@@ -330,7 +330,7 @@ export default function MusicApp({ windowId }) {
                         <span className="text-[8px] font-bold bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 px-0.5 rounded flex-shrink-0">E</span>
                       )}
                       {song.isStarred && (
-                        <span className="text-[10px] text-red-500 flex-shrink-0">â˜…</span>
+                        <span className="text-[10px] text-red-500 flex-shrink-0">★</span>
                       )}
                     </div>
                     <span className="text-[11px] text-gray-500 dark:text-gray-400 truncate mt-0.5 leading-none">

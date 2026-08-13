@@ -142,7 +142,7 @@ export default function Messages({ windowId }) {
     },
     {
       id: "antonio",
-      name: "Antonio Manriquez",
+      name: "Ali Raza",
       avatar: "/icons/PngItem_6452863.png",
       avatarBg: "bg-green-100 dark:bg-green-950/40",
       isImage: true,
@@ -150,7 +150,7 @@ export default function Messages({ windowId }) {
       isGroup: false,
       colorTheme: "blue",
       messages: [
-        { id: 1, sender: "Antonio", text: "Is your mind blown? 🤯", time: "Sunday 2:10 PM" }
+        { id: 1, sender: "Ali", text: "Is your mind blown? 🤯", time: "Sunday 2:10 PM" }
       ]
     },
     {

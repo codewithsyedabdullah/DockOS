@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useAppStore } from "../store/Appstore.js";
 import TextEdit from "./TextEdit";
@@ -1748,7 +1748,7 @@ export default function Finder({ initialPath = "/icloud", windowId, maximized, i
                   </svg>
                   <span>Copy</span>
                 </div>
-                <span className="text-[10px] text-gray-400/85 group-hover:text-white/80">âŒ˜C</span>
+                <span className="text-[10px] text-gray-400/85 group-hover:text-white/80">⌘C</span>
               </button>
               <button 
                 onClick={() => { handleCut(contextMenu.file); setContextMenu(null); }} 
@@ -1763,7 +1763,7 @@ export default function Finder({ initialPath = "/icloud", windowId, maximized, i
                   </svg>
                   <span>Cut (Move)</span>
                 </div>
-                <span className="text-[10px] text-gray-400/85 group-hover:text-white/80">âŒ˜X</span>
+                <span className="text-[10px] text-gray-400/85 group-hover:text-white/80">⌘X</span>
               </button>
               <div className={`border-t my-1.5 ${isDarkMode ? "border-white/5" : "border-gray-200/60"}`}></div>
               <button 
@@ -1791,7 +1791,7 @@ export default function Finder({ initialPath = "/icloud", windowId, maximized, i
                   </svg>
                   <span>Delete</span>
                 </div>
-                <span className="text-[10px] text-red-400 group-hover:text-white/80">âŒ˜âŒ«</span>
+                <span className="text-[10px] text-red-400 group-hover:text-white/80">⌘⌫</span>
               </button>
             </div>
           ) : (
@@ -1808,7 +1808,7 @@ export default function Finder({ initialPath = "/icloud", windowId, maximized, i
                   </svg>
                   <span>New Folder</span>
                 </div>
-                <span className="text-[10px] text-gray-400/85 group-hover:text-white/80">â‡§âŒ˜N</span>
+                <span className="text-[10px] text-gray-400/85 group-hover:text-white/80">⇧⌘N</span>
               </button>
               <button 
                 onClick={() => { handleCreateFile(); setContextMenu(null); }} 
@@ -1823,7 +1823,7 @@ export default function Finder({ initialPath = "/icloud", windowId, maximized, i
                   </svg>
                   <span>New File</span>
                 </div>
-                <span className="text-[10px] text-gray-400/85 group-hover:text-white/80">âŒ˜N</span>
+                <span className="text-[10px] text-gray-400/85 group-hover:text-white/80">⌘N</span>
               </button>
               {clipboard && (
                 <>
@@ -1839,7 +1839,7 @@ export default function Finder({ initialPath = "/icloud", windowId, maximized, i
                       </svg>
                       <span>Paste Item</span>
                     </div>
-                    <span className="text-[10px] text-gray-400/85 group-hover:text-white/80">âŒ˜V</span>
+                    <span className="text-[10px] text-gray-400/85 group-hover:text-white/80">⌘V</span>
                   </button>
                 </>
               )}

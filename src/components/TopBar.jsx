@@ -1,4 +1,4 @@
-﻿// src/components/TopBar.jsx
+// src/components/TopBar.jsx
 import React, { useEffect, useState } from "react";
 import {
   DropdownMenu,
@@ -54,15 +54,10 @@ import {
 } from "react-icons/fi";
 import ControlCenter from "./ControlCenter";
 
-// DockOS Logo Mark
-const DockOSLogo = () => (
-  <svg width="14" height="17" viewBox="0 0 24 28" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-    <rect x="1.8" y="2.5" width="20.4" height="17.5" rx="3.5" />
-    <line x1="1.8" y1="8.5" x2="22.2" y2="8.5" />
-    <circle cx="5.6" cy="5.6" r="0.65" fill="currentColor" stroke="none" />
-    <circle cx="8.6" cy="5.6" r="0.65" fill="currentColor" stroke="none" />
-    <circle cx="11.6" cy="5.6" r="0.65" fill="currentColor" stroke="none" />
-    <rect x="4.5" y="12" width="15" height="4.5" rx="2.2" />
+// Apple Logo Mark
+const AppleLogo = () => (
+  <svg width="15" height="19" viewBox="0 0 384 512" fill="currentColor">
+    <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
   </svg>
 );
 
@@ -166,7 +161,7 @@ export default function TopBar({ appTitle = "Finder", setStage }) {
           <DropdownMenuTrigger
             className={`cursor-pointer flex items-center justify-center w-8 h-7 ${hoverStyle}`}
           >
-            <DockOSLogo />
+            <AppleLogo />
           </DropdownMenuTrigger>
 
           <DropdownMenuContent 
@@ -214,7 +209,7 @@ export default function TopBar({ appTitle = "Finder", setStage }) {
                 <FiXCircle className="w-4 h-4 opacity-75" />
                 <span>Force Quit</span>
               </div>
-              <span className="text-xs opacity-50 font-normal">âŒ¥â‡§âŒ˜âŽ‹</span>
+              <span className="text-xs opacity-50 font-normal">⌥⇧⌘⎋</span>
             </DropdownMenuItem>
 
             <DropdownMenuSeparator className={`my-1 mx-2 ${isDarkMode ? 'bg-white/10' : 'bg-black/5'}`} />
@@ -241,7 +236,7 @@ export default function TopBar({ appTitle = "Finder", setStage }) {
                 <FiLock className="w-4 h-4 opacity-75" />
                 <span>Lock Screen</span>
               </div>
-              <span className="text-xs opacity-50 font-normal">âŒƒâŒ˜Q</span>
+              <span className="text-xs opacity-50 font-normal">⌃⌘Q</span>
             </DropdownMenuItem>
 
             <DropdownMenuItem className={`flex items-center justify-between px-3 py-1.5 text-[13.5px] rounded-lg transition-colors focus:bg-[#007aff] focus:text-white cursor-default ${isDarkMode ? 'text-white/90' : 'text-gray-900'}`} onClick={() => handleAction("logout")}>
@@ -249,7 +244,7 @@ export default function TopBar({ appTitle = "Finder", setStage }) {
                 <FiUser className="w-4 h-4 opacity-75" />
                 <span>Log Out {username}...</span>
               </div>
-              <span className="text-xs opacity-50 font-normal">â‡§âŒ˜Q</span>
+              <span className="text-xs opacity-50 font-normal">⇧⌘Q</span>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
@@ -279,28 +274,28 @@ export default function TopBar({ appTitle = "Finder", setStage }) {
                   <FiFolderPlus className="w-4 h-4 opacity-75" />
                   <span>New Folder</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">â‡§âŒ˜N</span>
+                <span className="text-xs opacity-50 font-normal">⇧⌘N</span>
               </DropdownMenuItem>
               <DropdownMenuItem className={`flex items-center justify-between px-3 py-1.5 text-[13.5px] rounded-lg transition-colors focus:bg-[#007aff] focus:text-white cursor-default ${isDarkMode ? 'text-white/90' : 'text-gray-900'}`}>
                 <div className="flex items-center gap-2.5">
                   <FiPlusSquare className="w-4 h-4 opacity-75" />
                   <span>New Finder Window</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒ˜N</span>
+                <span className="text-xs opacity-50 font-normal">⌘N</span>
               </DropdownMenuItem>
               <DropdownMenuItem className={`flex items-center justify-between px-3 py-1.5 text-[13.5px] rounded-lg transition-colors focus:bg-[#007aff] focus:text-white cursor-default ${isDarkMode ? 'text-white/90' : 'text-gray-900'}`}>
                 <div className="flex items-center gap-2.5">
                   <FiPlus className="w-4 h-4 opacity-75" />
                   <span>New Tab</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒ˜T</span>
+                <span className="text-xs opacity-50 font-normal">⌘T</span>
               </DropdownMenuItem>
               <DropdownMenuItem className={`flex items-center justify-between px-3 py-1.5 text-[13.5px] rounded-lg transition-colors focus:bg-[#007aff] focus:text-white cursor-default ${isDarkMode ? 'text-white/90' : 'text-gray-900'}`}>
                 <div className="flex items-center gap-2.5">
                   <FiFileText className="w-4 h-4 opacity-75" />
                   <span>Open</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒ˜O</span>
+                <span className="text-xs opacity-50 font-normal">⌘O</span>
               </DropdownMenuItem>
 
               <DropdownMenuSeparator className={`my-1 mx-2 ${isDarkMode ? 'bg-white/10' : 'bg-black/5'}`} />
@@ -310,7 +305,7 @@ export default function TopBar({ appTitle = "Finder", setStage }) {
                   <FiInfo className="w-4 h-4 opacity-75" />
                   <span>Get Info</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒ˜I</span>
+                <span className="text-xs opacity-50 font-normal">⌘I</span>
               </DropdownMenuItem>
               <DropdownMenuItem className={`flex items-center justify-between px-3 py-1.5 text-[13.5px] rounded-lg transition-colors focus:bg-[#007aff] focus:text-white cursor-default ${isDarkMode ? 'text-white/90' : 'text-gray-900'}`}>
                 <div className="flex items-center gap-2.5">
@@ -327,7 +322,7 @@ export default function TopBar({ appTitle = "Finder", setStage }) {
                   <FiCopy className="w-4 h-4 opacity-75" />
                   <span>Duplicate</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒ˜D</span>
+                <span className="text-xs opacity-50 font-normal">⌘D</span>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -350,14 +345,14 @@ export default function TopBar({ appTitle = "Finder", setStage }) {
                   <FiCornerUpLeft className="w-4 h-4 opacity-75" />
                   <span>Undo</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒ˜Z</span>
+                <span className="text-xs opacity-50 font-normal">⌘Z</span>
               </DropdownMenuItem>
               <DropdownMenuItem className={`flex items-center justify-between px-3 py-1.5 text-[13.5px] rounded-lg transition-colors focus:bg-[#007aff] focus:text-white cursor-default ${isDarkMode ? 'text-white/90' : 'text-gray-900'}`}>
                 <div className="flex items-center gap-2.5">
                   <FiCornerUpRight className="w-4 h-4 opacity-75" />
                   <span>Redo</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">â‡§âŒ˜Z</span>
+                <span className="text-xs opacity-50 font-normal">⇧⌘Z</span>
               </DropdownMenuItem>
 
               <DropdownMenuSeparator className={`my-1 mx-2 ${isDarkMode ? 'bg-white/10' : 'bg-black/5'}`} />
@@ -367,28 +362,28 @@ export default function TopBar({ appTitle = "Finder", setStage }) {
                   <FiScissors className="w-4 h-4 opacity-75" />
                   <span>Cut</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒ˜X</span>
+                <span className="text-xs opacity-50 font-normal">⌘X</span>
               </DropdownMenuItem>
               <DropdownMenuItem className={`flex items-center justify-between px-3 py-1.5 text-[13.5px] rounded-lg transition-colors focus:bg-[#007aff] focus:text-white cursor-default ${isDarkMode ? 'text-white/90' : 'text-gray-900'}`}>
                 <div className="flex items-center gap-2.5">
                   <FiCopy className="w-4 h-4 opacity-75" />
                   <span>Copy</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒ˜C</span>
+                <span className="text-xs opacity-50 font-normal">⌘C</span>
               </DropdownMenuItem>
               <DropdownMenuItem className={`flex items-center justify-between px-3 py-1.5 text-[13.5px] rounded-lg transition-colors focus:bg-[#007aff] focus:text-white cursor-default ${isDarkMode ? 'text-white/90' : 'text-gray-900'}`}>
                 <div className="flex items-center gap-2.5">
                   <FiClipboard className="w-4 h-4 opacity-75" />
                   <span>Paste</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒ˜V</span>
+                <span className="text-xs opacity-50 font-normal">⌘V</span>
               </DropdownMenuItem>
               <DropdownMenuItem className={`flex items-center justify-between px-3 py-1.5 text-[13.5px] rounded-lg transition-colors focus:bg-[#007aff] focus:text-white cursor-default ${isDarkMode ? 'text-white/90' : 'text-gray-900'}`}>
                 <div className="flex items-center gap-2.5">
                   <FiMaximize className="w-4 h-4 opacity-75" />
                   <span>Select All</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒ˜A</span>
+                <span className="text-xs opacity-50 font-normal">⌘A</span>
               </DropdownMenuItem>
 
               <DropdownMenuSeparator className={`my-1 mx-2 ${isDarkMode ? 'bg-white/10' : 'bg-black/5'}`} />
@@ -398,7 +393,7 @@ export default function TopBar({ appTitle = "Finder", setStage }) {
                   <FiSearch className="w-4 h-4 opacity-75" />
                   <span>Find</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒ˜F</span>
+                <span className="text-xs opacity-50 font-normal">⌘F</span>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -421,28 +416,28 @@ export default function TopBar({ appTitle = "Finder", setStage }) {
                   <FiGrid className="w-4 h-4 opacity-75" />
                   <span>as Icons</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒ˜1</span>
+                <span className="text-xs opacity-50 font-normal">⌘1</span>
               </DropdownMenuItem>
               <DropdownMenuItem className={`flex items-center justify-between px-3 py-1.5 text-[13.5px] rounded-lg transition-colors focus:bg-[#007aff] focus:text-white cursor-default ${isDarkMode ? 'text-white/90' : 'text-gray-900'}`}>
                 <div className="flex items-center gap-2.5">
                   <FiList className="w-4 h-4 opacity-75" />
                   <span>as List</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒ˜2</span>
+                <span className="text-xs opacity-50 font-normal">⌘2</span>
               </DropdownMenuItem>
               <DropdownMenuItem className={`flex items-center justify-between px-3 py-1.5 text-[13.5px] rounded-lg transition-colors focus:bg-[#007aff] focus:text-white cursor-default ${isDarkMode ? 'text-white/90' : 'text-gray-900'}`}>
                 <div className="flex items-center gap-2.5">
                   <FiColumns className="w-4 h-4 opacity-75" />
                   <span>as Columns</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒ˜3</span>
+                <span className="text-xs opacity-50 font-normal">⌘3</span>
               </DropdownMenuItem>
               <DropdownMenuItem className={`flex items-center justify-between px-3 py-1.5 text-[13.5px] rounded-lg transition-colors focus:bg-[#007aff] focus:text-white cursor-default ${isDarkMode ? 'text-white/90' : 'text-gray-900'}`}>
                 <div className="flex items-center gap-2.5">
                   <FiImage className="w-4 h-4 opacity-75" />
                   <span>as Gallery</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒ˜4</span>
+                <span className="text-xs opacity-50 font-normal">⌘4</span>
               </DropdownMenuItem>
 
               <DropdownMenuSeparator className={`my-1 mx-2 ${isDarkMode ? 'bg-white/10' : 'bg-black/5'}`} />
@@ -452,14 +447,14 @@ export default function TopBar({ appTitle = "Finder", setStage }) {
                   <FiColumns className="w-4 h-4 opacity-75" />
                   <span>Show Sidebar</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒ¥âŒ˜S</span>
+                <span className="text-xs opacity-50 font-normal">⌥⌘S</span>
               </DropdownMenuItem>
               <DropdownMenuItem className={`flex items-center justify-between px-3 py-1.5 text-[13.5px] rounded-lg transition-colors focus:bg-[#007aff] focus:text-white cursor-default ${isDarkMode ? 'text-white/90' : 'text-gray-900'}`}>
                 <div className="flex items-center gap-2.5">
                   <FiMinusSquare className="w-4 h-4 opacity-75" />
                   <span>Hide Toolbar</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒ¥âŒ˜T</span>
+                <span className="text-xs opacity-50 font-normal">⌥⌘T</span>
               </DropdownMenuItem>
 
               <DropdownMenuSeparator className={`my-1 mx-2 ${isDarkMode ? 'bg-white/10' : 'bg-black/5'}`} />
@@ -469,7 +464,7 @@ export default function TopBar({ appTitle = "Finder", setStage }) {
                   <FiMaximize2 className="w-4 h-4 opacity-75" />
                   <span>Enter Full Screen</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒƒâŒ˜F</span>
+                <span className="text-xs opacity-50 font-normal">⌃⌘F</span>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -492,14 +487,14 @@ export default function TopBar({ appTitle = "Finder", setStage }) {
                   <FiArrowLeft className="w-4 h-4 opacity-75" />
                   <span>Back</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒ˜[</span>
+                <span className="text-xs opacity-50 font-normal">⌘[</span>
               </DropdownMenuItem>
               <DropdownMenuItem className={`flex items-center justify-between px-3 py-1.5 text-[13.5px] rounded-lg transition-colors focus:bg-[#007aff] focus:text-white cursor-default ${isDarkMode ? 'text-white/90' : 'text-gray-900'}`}>
                 <div className="flex items-center gap-2.5">
                   <FiArrowRight className="w-4 h-4 opacity-75" />
                   <span>Forward</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒ˜]</span>
+                <span className="text-xs opacity-50 font-normal">⌘]</span>
               </DropdownMenuItem>
 
               <DropdownMenuSeparator className={`my-1 mx-2 ${isDarkMode ? 'bg-white/10' : 'bg-black/5'}`} />
@@ -509,28 +504,28 @@ export default function TopBar({ appTitle = "Finder", setStage }) {
                   <FiMonitor className="w-4 h-4 opacity-75" />
                   <span>Desktop</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">â‡§âŒ˜D</span>
+                <span className="text-xs opacity-50 font-normal">⇧⌘D</span>
               </DropdownMenuItem>
               <DropdownMenuItem className={`flex items-center justify-between px-3 py-1.5 text-[13.5px] rounded-lg transition-colors focus:bg-[#007aff] focus:text-white cursor-default ${isDarkMode ? 'text-white/90' : 'text-gray-900'}`}>
                 <div className="flex items-center gap-2.5">
                   <FiHome className="w-4 h-4 opacity-75" />
                   <span>Home</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">â‡§âŒ˜H</span>
+                <span className="text-xs opacity-50 font-normal">⇧⌘H</span>
               </DropdownMenuItem>
               <DropdownMenuItem className={`flex items-center justify-between px-3 py-1.5 text-[13.5px] rounded-lg transition-colors focus:bg-[#007aff] focus:text-white cursor-default ${isDarkMode ? 'text-white/90' : 'text-gray-900'}`}>
                 <div className="flex items-center gap-2.5">
                   <FiFile className="w-4 h-4 opacity-75" />
                   <span>Documents</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">â‡§âŒ˜O</span>
+                <span className="text-xs opacity-50 font-normal">⇧⌘O</span>
               </DropdownMenuItem>
               <DropdownMenuItem className={`flex items-center justify-between px-3 py-1.5 text-[13.5px] rounded-lg transition-colors focus:bg-[#007aff] focus:text-white cursor-default ${isDarkMode ? 'text-white/90' : 'text-gray-900'}`}>
                 <div className="flex items-center gap-2.5">
                   <FiDownload className="w-4 h-4 opacity-75" />
                   <span>Downloads</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒ¥âŒ˜L</span>
+                <span className="text-xs opacity-50 font-normal">⌥⌘L</span>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -553,14 +548,14 @@ export default function TopBar({ appTitle = "Finder", setStage }) {
                   <FiMinus className="w-4 h-4 opacity-75" />
                   <span>Minimize</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒ˜M</span>
+                <span className="text-xs opacity-50 font-normal">⌘M</span>
               </DropdownMenuItem>
               <DropdownMenuItem className={`flex items-center justify-between px-3 py-1.5 text-[13.5px] rounded-lg transition-colors focus:bg-[#007aff] focus:text-white cursor-default ${isDarkMode ? 'text-white/90' : 'text-gray-900'}`}>
                 <div className="flex items-center gap-2.5">
                   <FiMaximize2 className="w-4 h-4 opacity-75" />
                   <span>Zoom</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">â€”</span>
+                <span className="text-xs opacity-50 font-normal">—</span>
               </DropdownMenuItem>
 
               <DropdownMenuSeparator className={`my-1 mx-2 ${isDarkMode ? 'bg-white/10' : 'bg-black/5'}`} />
@@ -570,7 +565,7 @@ export default function TopBar({ appTitle = "Finder", setStage }) {
                   <FiMaximize2 className="w-4 h-4 opacity-75" />
                   <span>Enter Full Screen</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒƒâŒ˜F</span>
+                <span className="text-xs opacity-50 font-normal">⌃⌘F</span>
               </DropdownMenuItem>
 
               <DropdownMenuSeparator className={`my-1 mx-2 ${isDarkMode ? 'bg-white/10' : 'bg-black/5'}`} />
@@ -580,7 +575,7 @@ export default function TopBar({ appTitle = "Finder", setStage }) {
                   <FiLayers className="w-4 h-4 opacity-75" />
                   <span>Bring All to Front</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">â€”</span>
+                <span className="text-xs opacity-50 font-normal">—</span>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -603,7 +598,7 @@ export default function TopBar({ appTitle = "Finder", setStage }) {
                   <FiHelpCircle className="w-4 h-4 opacity-75" />
                   <span>macOS Help</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">âŒ˜?</span>
+                <span className="text-xs opacity-50 font-normal">⌘?</span>
               </DropdownMenuItem>
 
               <DropdownMenuSeparator className={`my-1 mx-2 ${isDarkMode ? 'bg-white/10' : 'bg-black/5'}`} />
@@ -613,14 +608,14 @@ export default function TopBar({ appTitle = "Finder", setStage }) {
                   <FiAward className="w-4 h-4 opacity-75" />
                   <span>See What's New</span>
                 </div>
-                <span className="text-xs opacity-50 font-normal">â€”</span>
+                <span className="text-xs opacity-50 font-normal">—</span>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
       </div>
 
-      {/* CENTER â€” empty like macOS */}
+      {/* CENTER — empty like macOS */}
       <div className="flex-1"></div>
 
       {/* RIGHT */}

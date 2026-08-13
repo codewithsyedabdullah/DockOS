@@ -120,14 +120,14 @@ export default function Mail({ windowId }) {
     },
     {
       id: 5,
-      sender: "Antonio Manriquez",
+      sender: "Ali Raza",
       avatar: "/icons/PngItem_6452863.png",
       subject: "Pick up from airport?",
       date: "3/10/25",
       excerpt: "Hi Danny! Hope all's well with you. I'm coming home tomorrow and was wondering if you mig...",
       isUnread: false,
       category: "primary",
-      content: `Hi Danny!\n\nHope all's well with you. I'm coming home tomorrow on flight AA204 and was wondering if you might be free to pick me up around 4 PM? Let me know.\n\nThanks,\nAntonio`
+      content: `Hi Danny!\n\nHope all's well with you. I'm coming home tomorrow on flight AA204 and was wondering if you might be free to pick me up around 4 PM? Let me know.\n\nThanks,\nAli`
     },
     {
       id: 6,

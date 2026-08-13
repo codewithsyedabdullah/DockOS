@@ -1,4 +1,4 @@
-﻿import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useAppStore } from "../store/Appstore.js";
 import { Safari } from "../app/Safari";
 import Spotify from "../app/Spotify";
@@ -423,7 +423,7 @@ export default function Dock() {
                             group-hover/preview:opacity-100 transition-opacity hover:bg-red-600
                           "
                         >
-                          Ã—
+                          ×
                         </button>
                       </div>
                     );

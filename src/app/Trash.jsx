@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiTrash2, FiRefreshCw, FiAlertCircle } from "react-icons/fi";
 import { BsTrash, BsFileEarmark } from "react-icons/bs";
@@ -280,7 +280,7 @@ export default function Trash({ windowId }) {
 
         {/* Center: Styled Info (Item Count) */}
         <div className={`text-[11px] font-semibold select-none ${isDarkMode ? "text-gray-400" : "text-gray-500"}`}>
-          Trash â€” {trashedFiles.length} {trashedFiles.length === 1 ? "item" : "items"}
+          Trash — {trashedFiles.length} {trashedFiles.length === 1 ? "item" : "items"}
         </div>
 
         {/* Right: Empty button */}

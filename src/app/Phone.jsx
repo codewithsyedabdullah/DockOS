@@ -171,7 +171,7 @@ export default function PhoneApp({ windowId }) {
     },
     {
       id: "mayuri",
-      name: "Mayuri",
+      name: "Mariam",
       avatar: "/icons/PngItem_4608119.png",
       avatarBg: "bg-purple-100 dark:bg-purple-950/60",
       device: "mobile",
@@ -179,7 +179,7 @@ export default function PhoneApp({ windowId }) {
       time: "3/30/25",
       dateLabel: "3/30/25",
       isOutgoing: false,
-      email: "mayuri@yahoo.com",
+      email: "mariam@yahoo.com",
       history: [
         { type: "Incoming Call", time: "3/30/25 - 9:15 AM", duration: "1 min 22 secs" }
       ]
@@ -205,7 +205,7 @@ export default function PhoneApp({ windowId }) {
   const favourites = [
     { id: "chris", name: "Chris", avatar: "/icons/PngItem_4082636.png", bgClass: "bg-red-100 dark:bg-red-950/60", iconType: "phone" },
     { id: "brian", name: "Brian", avatar: "/icons/PngItem_4409921.png", bgClass: "bg-amber-100 dark:bg-amber-950/60", iconType: "message" },
-    { id: "mayuri", name: "Mayuri", avatar: "/icons/PngItem_4608119.png", bgClass: "bg-purple-100 dark:bg-purple-950/60", iconType: "message" },
+    { id: "mayuri", name: "Mariam", avatar: "/icons/PngItem_4608119.png", bgClass: "bg-purple-100 dark:bg-purple-950/60", iconType: "message" },
     { id: "rigo_fav", name: "Rigo", avatar: "/icons/PngItem_5031003.png", bgClass: "bg-sky-100 dark:bg-sky-950/60", iconType: "video" }
   ];
 

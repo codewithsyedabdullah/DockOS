@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function RegionScreen({ goNext, goBack }) {
@@ -6,7 +6,7 @@ export default function RegionScreen({ goNext, goBack }) {
     "United Kingdom",
     "United States",
     "Afghanistan",
-    "Ã…land Islands",
+    "Åland Islands",
     "Albania",
     "Algeria",
     "American Samoa",
