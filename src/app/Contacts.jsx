@@ -71,7 +71,7 @@ const defaultContacts = [
     id: "antonio",
     firstName: "Ali",
     lastName: "Raza",
-    avatar: "/icons/PngItem_6452863.png",
+    avatar: "/icons/owl.png",
     avatarBg: "bg-orange-100 dark:bg-orange-950/40",
     gradient: "from-[#ff9f0a]/80 to-[#ff3b30]/80",
     phone: "(919) 555-0192",
@@ -85,7 +85,7 @@ const defaultContacts = [
     id: "magico",
     firstName: "Ayesha",
     lastName: "Khan",
-    avatar: "/icons/PngItem_5031003.png",
+    avatar: "/icons/PngItem_6452863.png",
     avatarBg: "bg-emerald-100 dark:bg-emerald-950/40",
     gradient: "from-[#30d158]/80 to-[#116928]/80",
     phone: "(919) 555-0143",
@@ -127,7 +127,7 @@ const defaultContacts = [
     id: "sarah",
     firstName: "Bilal",
     lastName: "Ahmed",
-    avatar: "/icons/PngItem_4608119.png",
+    avatar: "/icons/PngItem_5031003.png",
     avatarBg: "bg-pink-100 dark:bg-pink-950/40",
     gradient: "from-[#e46e88] to-[#993b50]",
     phone: "(919) 555-2481",
@@ -169,7 +169,7 @@ const defaultContacts = [
     id: "mayuri",
     firstName: "Mariam",
     lastName: "Siddiqui",
-    avatar: "/icons/owl.png",
+    avatar: "/icons/PngItem_4608119.png",
     avatarBg: "bg-amber-100 dark:bg-amber-950/40",
     gradient: "from-[#ffd60a]/80 to-[#ff9f0a]/80",
     phone: "(919) 555-0144",
@@ -198,7 +198,23 @@ export default function ContactsApp({ windowId }) {
     const saved = localStorage.getItem("os_contacts");
     const parsed = saved ? JSON.parse(saved) : null;
     if (Array.isArray(parsed)) {
-      return parsed.map(c => c?.firstName === "Usman" ? { ...c, firstName: "Zainab" } : c);
+      return parsed.map(c => {
+        const copy = { ...c };
+        if (copy?.firstName === "Usman") copy.firstName = "Zainab";
+        const canonicalAvatars = {
+          "Ali Raza": "/icons/owl.png",
+          "Mariam Siddiqui": "/icons/PngItem_4608119.png",
+          "Ayesha Khan": "/icons/PngItem_6452863.png",
+          "Bilal Ahmed": "/icons/PngItem_5031003.png",
+          "Fatima Noor": "/icons/PngItem_4082636.png",
+          "Zara Malik": "/icons/PngItem_4409921.png",
+          "Hamza Sheikh": "/icons/PngItem_6304991.png",
+          "Zainab Tariq": "/icons/fox.png"
+        };
+        const key = `${copy?.firstName} ${copy?.lastName}`;
+        if (canonicalAvatars[key]) copy.avatar = canonicalAvatars[key];
+        return copy;
+      });
     }
     return defaultContacts;
   });

@@ -123,7 +123,7 @@ export default function FaceTime({ windowId }) {
   const contacts = [
     {
       id: "trev",
-      name: "Ayesha Khan",
+      name: "Bilal Ahmed",
       avatar: "/icons/PngItem_5031003.png",
       sub: "Suggested",
       type: "audio",
@@ -144,7 +144,7 @@ export default function FaceTime({ windowId }) {
     {
       id: "andre",
       name: "Ali Raza",
-      avatar: "/icons/PngItem_4608119.png",
+      avatar: "/icons/owl.png",
       sub: "Video 9:20 AM",
       type: "video",
       avatarBg: "#c7e6f5",
@@ -173,7 +173,7 @@ export default function FaceTime({ windowId }) {
     },
     {
       id: "guillermo",
-      name: "Bilal Ahmed",
+      name: "Ayesha Khan",
       avatar: "/icons/PngItem_6452863.png",
       sub: "Suggested",
       type: "video",

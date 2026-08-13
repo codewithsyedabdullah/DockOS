@@ -73,7 +73,7 @@ export default function Mail({ windowId }) {
   const emails = [
     {
       id: 1,
-      sender: "Ayesha Khan",
+      sender: "Bilal Ahmed",
       avatar: "/icons/PngItem_5031003.png",
       subject: "Dinner at the Ricos'",
       date: "3/24/25",
@@ -81,7 +81,7 @@ export default function Mail({ windowId }) {
       isUnread: true,
       hasAttachment: true,
       category: "primary",
-      content: `Hello Abdullah,\n\nThanks again for the delicious evening. It was so much fun making and eating dinner with you and the rest of the crew! Let's do it again next month.\n\nBest,\nAyesha`
+      content: `Hello Abdullah,\n\nThanks again for the delicious evening. It was so much fun making and eating dinner with you and the rest of the crew! Let's do it again next month.\n\nBest,\nBilal`
     },
     {
       id: 2,
@@ -97,7 +97,7 @@ export default function Mail({ windowId }) {
     {
       id: 3,
       sender: "Ali Raza",
-      avatar: "/icons/PngItem_4608119.png",
+      avatar: "/icons/owl.png",
       subject: "Day trip idea",
       date: "3/17/25",
       excerpt: "Hello Abdullah, Here's more info on that park I was telling you about. Definitely go if you have the...",
@@ -120,19 +120,19 @@ export default function Mail({ windowId }) {
     },
     {
       id: 5,
-      sender: "Bilal Ahmed",
+      sender: "Ayesha Khan",
       avatar: "/icons/PngItem_6452863.png",
       subject: "Pick up from airport?",
       date: "3/10/25",
       excerpt: "Hi Abdullah! Hope all's well with you. I'm coming home tomorrow and was wondering if you mig...",
       isUnread: false,
       category: "primary",
-      content: `Hi Abdullah!\n\nHope all's well with you. I'm coming home tomorrow on flight AA204 and was wondering if you might be free to pick me up around 4 PM? Let me know.\n\nThanks,\nBilal`
+      content: `Hi Abdullah!\n\nHope all's well with you. I'm coming home tomorrow on flight AA204 and was wondering if you might be free to pick me up around 4 PM? Let me know.\n\nThanks,\nAyesha`
     },
     {
       id: 6,
       sender: "Ali Raza",
-      avatar: "/icons/PngItem_4608119.png",
+      avatar: "/icons/owl.png",
       subject: "National Parks in Southern California",
       date: "3/6/25",
       excerpt: "Hi Abdullah, I can't wait for our upcoming Joshua Tree National Park trip. Check out this guide a...",

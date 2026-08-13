@@ -123,7 +123,7 @@ export default function PhoneApp({ windowId }) {
     },
     {
       id: "guillermo",
-      name: "Bilal Ahmed",
+      name: "Ayesha Khan",
       avatar: "/icons/PngItem_6452863.png",
       avatarBg: "bg-orange-200 dark:bg-orange-950/60",
       device: "iPhone",
@@ -131,7 +131,7 @@ export default function PhoneApp({ windowId }) {
       time: "9:30 AM",
       dateLabel: "Today",
       isOutgoing: true,
-      email: "bilal.ahmed@icloud.com",
+      email: "ayesha.khan@icloud.com",
       history: [
         { type: "Outgoing Call", time: "Today - 9:30 AM", duration: "31 seconds" },
         { type: "Incoming Call", time: "Yesterday - 4:15 PM", duration: "2 mins 40 secs" },
@@ -140,7 +140,7 @@ export default function PhoneApp({ windowId }) {
     },
     {
       id: "rigo",
-      name: "Ayesha Khan",
+      name: "Bilal Ahmed",
       avatar: "/icons/PngItem_5031003.png",
       avatarBg: "bg-sky-100 dark:bg-sky-950/60",
       device: "mobile",
@@ -148,7 +148,7 @@ export default function PhoneApp({ windowId }) {
       time: "Yesterday",
       dateLabel: "Yesterday",
       isOutgoing: false,
-      email: "ayesha.khan@icloud.com",
+      email: "bilal.ahmed@icloud.com",
       history: [
         { type: "Incoming Call", time: "Yesterday - 5:20 PM", duration: "4 mins 12 secs" },
         { type: "Outgoing Call", time: "3/28/25 - 10:15 AM", duration: "1 min 5 secs" }
@@ -172,7 +172,7 @@ export default function PhoneApp({ windowId }) {
     {
       id: "mayuri",
       name: "Ali Raza",
-      avatar: "/icons/PngItem_4608119.png",
+      avatar: "/icons/owl.png",
       avatarBg: "bg-purple-100 dark:bg-purple-950/60",
       device: "mobile",
       type: "mobile",
@@ -205,8 +205,8 @@ export default function PhoneApp({ windowId }) {
   const favourites = [
     { id: "chris", name: "Zainab Tariq", avatar: "/icons/fox.png", bgClass: "bg-red-100 dark:bg-red-950/60", iconType: "phone" },
     { id: "brian", name: "Zara Malik", avatar: "/icons/PngItem_4409921.png", bgClass: "bg-amber-100 dark:bg-amber-950/60", iconType: "message" },
-    { id: "mayuri", name: "Ali Raza", avatar: "/icons/PngItem_4608119.png", bgClass: "bg-purple-100 dark:bg-purple-950/60", iconType: "message" },
-    { id: "rigo_fav", name: "Ayesha Khan", avatar: "/icons/PngItem_5031003.png", bgClass: "bg-sky-100 dark:bg-sky-950/60", iconType: "video" }
+    { id: "mayuri", name: "Ali Raza", avatar: "/icons/owl.png", bgClass: "bg-purple-100 dark:bg-purple-950/60", iconType: "message" },
+    { id: "rigo_fav", name: "Bilal Ahmed", avatar: "/icons/PngItem_5031003.png", bgClass: "bg-sky-100 dark:bg-sky-950/60", iconType: "video" }
   ];
 
   // Handle contact selection

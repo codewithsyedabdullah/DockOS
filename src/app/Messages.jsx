@@ -76,13 +76,13 @@ export default function Messages({ windowId }) {
   const pinnedContacts = [
     { id: "ashley", name: "Fatima Noor", avatar: "/icons/PngItem_4082636.png", bg: "bg-red-100 dark:bg-red-950/40", tip: "Did the kids finish their homework?", hasUnread: true, isImage: true },
     { id: "dawn", name: "Zara Malik", avatar: "/icons/PngItem_4409921.png", bg: "bg-amber-100 dark:bg-amber-950/40", isImage: true },
-    { id: "rico", name: "Ali Raza", avatar: "/icons/PngItem_4608119.png", bg: "bg-sky-100 dark:bg-sky-950/40", hasUnread: true, isImage: true },
-    { id: "olivia", name: "Ayesha Khan", avatar: "/icons/PngItem_5031003.png", bg: "bg-purple-100 dark:bg-purple-950/40", badge: "🌈", hasUnread: true, isImage: true },
+    { id: "rico", name: "Ali Raza", avatar: "/icons/owl.png", bg: "bg-sky-100 dark:bg-sky-950/40", hasUnread: true, isImage: true },
+    { id: "olivia", name: "Bilal Ahmed", avatar: "/icons/PngItem_5031003.png", bg: "bg-purple-100 dark:bg-purple-950/40", badge: "🌈", hasUnread: true, isImage: true },
     { id: "will", name: "Hamza Sheikh", avatar: "/icons/PngItem_6304991.png", bg: "bg-green-100 dark:bg-green-950/40", badge: "❤️", isImage: true },
     { id: "animation", name: "Animation Team", avatar: "/icons/PngItem_6452863.png", bg: "bg-orange-200 dark:bg-orange-950/40", isImage: true },
     { id: "foodie", name: "Foodie Friends", avatar: "/icons/PngItem_4082636.png", bg: "bg-teal-200 dark:bg-teal-950/40", isImage: true },
     { id: "hiker", name: "Hiker Neighbors", avatar: "/icons/PngItem_4409921.png", bg: "bg-blue-200 dark:bg-blue-950/40", isImage: true },
-    { id: "aileen", name: "Ali & Fatima", avatar: "/icons/PngItem_4608119.png", bg: "bg-rose-200 dark:bg-rose-950/40", isImage: true }
+    { id: "aileen", name: "Ali & Fatima", avatar: "/icons/owl.png", bg: "bg-rose-200 dark:bg-rose-950/40", isImage: true }
   ];
 
   // Conversations and Chat History
@@ -90,7 +90,7 @@ export default function Messages({ windowId }) {
     {
       id: "orkun",
       name: "Ali Raza",
-      avatar: "/icons/PngItem_4608119.png",
+      avatar: "/icons/owl.png",
       avatarBg: "bg-orange-100 dark:bg-orange-950/40",
       isImage: true,
       date: "Sunday",
@@ -129,7 +129,7 @@ export default function Messages({ windowId }) {
     },
     {
       id: "trev",
-      name: "Bilal Ahmed",
+      name: "Ayesha Khan",
       avatar: "/icons/PngItem_6452863.png",
       avatarBg: "bg-amber-100 dark:bg-amber-950/40",
       isImage: true,
@@ -137,12 +137,12 @@ export default function Messages({ windowId }) {
       isGroup: false,
       colorTheme: "blue",
       messages: [
-        { id: 1, sender: "Bilal", text: "Gotcha covered!", time: "Yesterday 4:15 PM" }
+        { id: 1, sender: "Ayesha", text: "Gotcha covered!", time: "Yesterday 4:15 PM" }
       ]
     },
     {
       id: "antonio",
-      name: "Bilal Ahmed",
+      name: "Ayesha Khan",
       avatar: "/icons/PngItem_6452863.png",
       avatarBg: "bg-green-100 dark:bg-green-950/40",
       isImage: true,
@@ -150,12 +150,12 @@ export default function Messages({ windowId }) {
       isGroup: false,
       colorTheme: "blue",
       messages: [
-        { id: 1, sender: "Bilal", text: "Is your mind blown? 🤯", time: "Sunday 2:10 PM" }
+        { id: 1, sender: "Ayesha", text: "Is your mind blown? 🤯", time: "Sunday 2:10 PM" }
       ]
     },
     {
       id: "xiaomeng",
-      name: "Ayesha Khan",
+      name: "Bilal Ahmed",
       avatar: "/icons/PngItem_5031003.png",
       avatarBg: "bg-purple-100 dark:bg-purple-950/40",
       isImage: true,
@@ -163,7 +163,7 @@ export default function Messages({ windowId }) {
       isGroup: false,
       colorTheme: "blue",
       messages: [
-        { id: 1, sender: "Ayesha", text: "Now you've got me thinking about my next vacation", time: "Sunday 1:05 PM" }
+        { id: 1, sender: "Bilal", text: "Now you've got me thinking about my next vacation", time: "Sunday 1:05 PM" }
       ]
     },
     {
@@ -448,7 +448,7 @@ export default function Messages({ windowId }) {
                   {activeChat.isGroup && !isMe && (
                     <div className="w-5 h-5 rounded-full overflow-hidden flex items-center justify-center shrink-0 mb-0.5 bg-gray-200 p-0.5">
                       <img 
-                        src={msg.sender === "Ayesha Khan" ? "/icons/PngItem_5031003.png" : "/icons/PngItem_4608119.png"} 
+                        src={msg.sender === "Ayesha Khan" ? "/icons/PngItem_6452863.png" : "/icons/owl.png"} 
                         alt={msg.sender} 
                         className="w-full h-full object-contain" 
                         />
