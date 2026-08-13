@@ -153,14 +153,14 @@ const defaultContacts = [
   },
   {
     id: "aga",
-    firstName: "Usman",
+    firstName: "Zainab",
     lastName: "Tariq",
     avatar: "/icons/PngItem_4608119.png",
     avatarBg: "bg-rose-100 dark:bg-rose-950/40",
     gradient: "from-[#ff6482]/80 to-[#ff2d55]/80",
     phone: "(919) 555-0133",
-    email: "usman.tariq@icloud.com",
-    workEmail: "usman@creativestudio.pk",
+    email: "zainab.tariq@icloud.com",
+    workEmail: "zainab@creativestudio.pk",
     address: "Street 2, University Town, Peshawar",
     birthday: "Dec 30",
     notes: "DevOps engineer."
@@ -196,7 +196,11 @@ export default function ContactsApp({ windowId }) {
   
   const [contacts, setContacts] = useState(() => {
     const saved = localStorage.getItem("os_contacts");
-    return saved ? JSON.parse(saved) : defaultContacts;
+    const parsed = saved ? JSON.parse(saved) : null;
+    if (Array.isArray(parsed)) {
+      return parsed.map(c => c?.firstName === "Usman" ? { ...c, firstName: "Zainab" } : c);
+    }
+    return defaultContacts;
   });
 
   const [selectedId, setSelectedId] = useState("graham");
