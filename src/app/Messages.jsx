@@ -74,14 +74,14 @@ export default function Messages({ windowId }) {
 
   // Mock Pinned Contacts
   const pinnedContacts = [
-    { id: "ashley", name: "Fatima Noor", avatar: "/icons/PngItem_4082636.png", bg: "bg-red-100 dark:bg-red-950/40", tip: "Did the kids finish their homework?", hasUnread: true, isImage: true },
-    { id: "dawn", name: "Zara Malik", avatar: "/icons/PngItem_4409921.png", bg: "bg-amber-100 dark:bg-amber-950/40", isImage: true },
+    { id: "ashley", name: "Fatima Noor", avatar: "/icons/chicken.png", bg: "bg-red-100 dark:bg-red-950/40", tip: "Did the kids finish their homework?", hasUnread: true, isImage: true },
+    { id: "dawn", name: "Zara Malik", avatar: "/icons/cow-face.png", bg: "bg-amber-100 dark:bg-amber-950/40", isImage: true },
     { id: "rico", name: "Ali Raza", avatar: "/icons/owl.png", bg: "bg-sky-100 dark:bg-sky-950/40", hasUnread: true, isImage: true },
-    { id: "olivia", name: "Bilal Ahmed", avatar: "/icons/PngItem_5031003.png", bg: "bg-purple-100 dark:bg-purple-950/40", badge: "🌈", hasUnread: true, isImage: true },
-    { id: "will", name: "Hamza Sheikh", avatar: "/icons/PngItem_6304991.png", bg: "bg-green-100 dark:bg-green-950/40", badge: "❤️", isImage: true },
-    { id: "animation", name: "Animation Team", avatar: "/icons/PngItem_6452863.png", bg: "bg-orange-200 dark:bg-orange-950/40", isImage: true },
-    { id: "foodie", name: "Foodie Friends", avatar: "/icons/PngItem_4082636.png", bg: "bg-teal-200 dark:bg-teal-950/40", isImage: true },
-    { id: "hiker", name: "Hiker Neighbors", avatar: "/icons/PngItem_4409921.png", bg: "bg-blue-200 dark:bg-blue-950/40", isImage: true },
+    { id: "olivia", name: "Bilal Ahmed", avatar: "/icons/fox.png", bg: "bg-purple-100 dark:bg-purple-950/40", badge: "🌈", hasUnread: true, isImage: true },
+    { id: "will", name: "Hamza Sheikh", avatar: "/icons/chicken.png", bg: "bg-green-100 dark:bg-green-950/40", badge: "❤️", isImage: true },
+    { id: "animation", name: "Animation Team", avatar: "/icons/chicken.png", bg: "bg-orange-200 dark:bg-orange-950/40", isImage: true },
+    { id: "foodie", name: "Foodie Friends", avatar: "/icons/cow-face.png", bg: "bg-teal-200 dark:bg-teal-950/40", isImage: true },
+    { id: "hiker", name: "Hiker Neighbors", avatar: "/icons/fox.png", bg: "bg-blue-200 dark:bg-blue-950/40", isImage: true },
     { id: "aileen", name: "Ali & Fatima", avatar: "/icons/owl.png", bg: "bg-rose-200 dark:bg-rose-950/40", isImage: true }
   ];
 
@@ -114,7 +114,7 @@ export default function Messages({ windowId }) {
     {
       id: "hiker",
       name: "Hiker Neighbors",
-      avatar: "/icons/PngItem_4409921.png",
+      avatar: "/icons/fox.png",
       avatarBg: "bg-blue-100 dark:bg-blue-950/40",
       isImage: true,
       date: "Sunday",
@@ -130,7 +130,7 @@ export default function Messages({ windowId }) {
     {
       id: "trev",
       name: "Ayesha Khan",
-      avatar: "/icons/PngItem_6452863.png",
+      avatar: "/icons/cow-face.png",
       avatarBg: "bg-amber-100 dark:bg-amber-950/40",
       isImage: true,
       date: "Yesterday",
@@ -143,7 +143,7 @@ export default function Messages({ windowId }) {
     {
       id: "antonio",
       name: "Ayesha Khan",
-      avatar: "/icons/PngItem_6452863.png",
+      avatar: "/icons/cow-face.png",
       avatarBg: "bg-green-100 dark:bg-green-950/40",
       isImage: true,
       date: "Sunday",
@@ -156,7 +156,7 @@ export default function Messages({ windowId }) {
     {
       id: "xiaomeng",
       name: "Bilal Ahmed",
-      avatar: "/icons/PngItem_5031003.png",
+      avatar: "/icons/fox.png",
       avatarBg: "bg-purple-100 dark:bg-purple-950/40",
       isImage: true,
       date: "Sunday",
@@ -169,7 +169,7 @@ export default function Messages({ windowId }) {
     {
       id: "jasmine",
       name: "Fatima Noor",
-      avatar: "/icons/PngItem_4082636.png",
+      avatar: "/icons/chicken.png",
       avatarBg: "bg-rose-100 dark:bg-rose-950/40",
       isImage: true,
       date: "Saturday",
@@ -182,7 +182,7 @@ export default function Messages({ windowId }) {
     {
       id: "nisha",
       name: "Zara Malik",
-      avatar: "/icons/PngItem_4409921.png",
+      avatar: "/icons/cow-face.png",
       avatarBg: "bg-teal-100 dark:bg-teal-950/40",
       isImage: true,
       date: "Friday",
@@ -448,7 +448,7 @@ export default function Messages({ windowId }) {
                   {activeChat.isGroup && !isMe && (
                     <div className="w-5 h-5 rounded-full overflow-hidden flex items-center justify-center shrink-0 mb-0.5 bg-gray-200 p-0.5">
                       <img 
-                        src={msg.sender === "Ayesha Khan" ? "/icons/PngItem_6452863.png" : "/icons/owl.png"} 
+                        src={msg.sender === "Ayesha Khan" ? "/icons/cow-face.png" : "/icons/owl.png"} 
                         alt={msg.sender} 
                         className="w-full h-full object-contain" 
                         />

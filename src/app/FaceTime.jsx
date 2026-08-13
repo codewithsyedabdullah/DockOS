@@ -124,7 +124,7 @@ export default function FaceTime({ windowId }) {
     {
       id: "trev",
       name: "Bilal Ahmed",
-      avatar: "/icons/PngItem_5031003.png",
+      avatar: "/icons/fox.png",
       sub: "Suggested",
       type: "audio",
       avatarBg: "#c7d5f5",
@@ -134,7 +134,7 @@ export default function FaceTime({ windowId }) {
     {
       id: "christian",
       name: "Fatima Noor",
-      avatar: "/icons/PngItem_4082636.png",
+      avatar: "/icons/chicken.png",
       sub: "Video 9:39 AM",
       type: "video",
       avatarBg: "#f5c7c7",
@@ -154,7 +154,7 @@ export default function FaceTime({ windowId }) {
     {
       id: "brian",
       name: "Zara Malik",
-      avatar: "/icons/PngItem_4409921.png",
+      avatar: "/icons/cow-face.png",
       sub: "Audio Yesterday",
       type: "audio",
       avatarBg: "#c7f5db",
@@ -164,7 +164,7 @@ export default function FaceTime({ windowId }) {
     {
       id: "will",
       name: "Hamza Sheikh",
-      avatar: "/icons/PngItem_6304991.png",
+      avatar: "/icons/chicken.png",
       sub: "Suggested",
       type: "audio",
       avatarBg: "#d5c7f5",
@@ -174,7 +174,7 @@ export default function FaceTime({ windowId }) {
     {
       id: "guillermo",
       name: "Ayesha Khan",
-      avatar: "/icons/PngItem_6452863.png",
+      avatar: "/icons/cow-face.png",
       sub: "Suggested",
       type: "video",
       isGroup: true,
@@ -444,7 +444,7 @@ export default function FaceTime({ windowId }) {
               style={{ backgroundColor: activeCall?.avatarBg || "#c7d5f5", aspectRatio: "1.6" }}
             >
               <img
-                src={activeCall?.avatar || "/icons/PngItem_5031003.png"}
+                src={activeCall?.avatar || "/icons/panda.png"}
                 alt={activeCall?.name || "Contact"}
                 className="w-full h-full object-contain"
               />

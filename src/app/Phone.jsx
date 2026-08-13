@@ -124,7 +124,7 @@ export default function PhoneApp({ windowId }) {
     {
       id: "guillermo",
       name: "Ayesha Khan",
-      avatar: "/icons/PngItem_6452863.png",
+      avatar: "/icons/cow-face.png",
       avatarBg: "bg-orange-200 dark:bg-orange-950/60",
       device: "iPhone",
       type: "mobile",
@@ -141,7 +141,7 @@ export default function PhoneApp({ windowId }) {
     {
       id: "rigo",
       name: "Bilal Ahmed",
-      avatar: "/icons/PngItem_5031003.png",
+      avatar: "/icons/fox.png",
       avatarBg: "bg-sky-100 dark:bg-sky-950/60",
       device: "mobile",
       type: "mobile",
@@ -157,7 +157,7 @@ export default function PhoneApp({ windowId }) {
     {
       id: "brian",
       name: "Zara Malik",
-      avatar: "/icons/PngItem_4409921.png",
+      avatar: "/icons/cow-face.png",
       avatarBg: "bg-amber-100 dark:bg-amber-950/60",
       device: "mobile",
       type: "mobile",
@@ -187,7 +187,7 @@ export default function PhoneApp({ windowId }) {
     {
       id: "liz",
       name: "Fatima Noor",
-      avatar: "/icons/PngItem_4082636.png",
+      avatar: "/icons/chicken.png",
       avatarBg: "bg-rose-200 dark:bg-rose-950/60",
       device: "iPhone",
       type: "mobile",
@@ -204,9 +204,9 @@ export default function PhoneApp({ windowId }) {
   // Favourites list
   const favourites = [
     { id: "chris", name: "Zainab Tariq", avatar: "/icons/fox.png", bgClass: "bg-red-100 dark:bg-red-950/60", iconType: "phone" },
-    { id: "brian", name: "Zara Malik", avatar: "/icons/PngItem_4409921.png", bgClass: "bg-amber-100 dark:bg-amber-950/60", iconType: "message" },
+    { id: "brian", name: "Zara Malik", avatar: "/icons/cow-face.png", bgClass: "bg-amber-100 dark:bg-amber-950/60", iconType: "message" },
     { id: "mayuri", name: "Ali Raza", avatar: "/icons/owl.png", bgClass: "bg-purple-100 dark:bg-purple-950/60", iconType: "message" },
-    { id: "rigo_fav", name: "Bilal Ahmed", avatar: "/icons/PngItem_5031003.png", bgClass: "bg-sky-100 dark:bg-sky-950/60", iconType: "video" }
+    { id: "rigo_fav", name: "Bilal Ahmed", avatar: "/icons/fox.png", bgClass: "bg-sky-100 dark:bg-sky-950/60", iconType: "video" }
   ];
 
   // Handle contact selection
@@ -228,7 +228,7 @@ export default function PhoneApp({ windowId }) {
   // Place mock call
   const handlePlaceCall = (contactInfo) => {
     let name = "Unknown";
-    let avatar = "/icons/PngItem_5031003.png";
+    let avatar = "/icons/panda.png";
     let bg = "linear-gradient(135deg, #757f9a 0%, #d7dde8 100%)";
 
     if (contactInfo) {

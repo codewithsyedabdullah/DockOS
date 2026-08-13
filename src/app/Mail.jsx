@@ -74,7 +74,7 @@ export default function Mail({ windowId }) {
     {
       id: 1,
       sender: "Bilal Ahmed",
-      avatar: "/icons/PngItem_5031003.png",
+      avatar: "/icons/fox.png",
       subject: "Dinner at the Ricos'",
       date: "3/24/25",
       excerpt: "Dear Abdullah, Thanks again for the delicious evening. It was so much fun making and eating...",
@@ -86,7 +86,7 @@ export default function Mail({ windowId }) {
     {
       id: 2,
       sender: "Fatima Noor",
-      avatar: "/icons/PngItem_4082636.png",
+      avatar: "/icons/chicken.png",
       subject: "Walkthrough",
       date: "3/20/25",
       excerpt: "Hi Abdullah and Bilal Ahmed, I've just completed a walkthrough of 212 Opal and wanted to share...",
@@ -110,7 +110,7 @@ export default function Mail({ windowId }) {
     {
       id: 4,
       sender: "Hamza Sheikh",
-      avatar: "/icons/PngItem_6304991.png",
+      avatar: "/icons/chicken.png",
       subject: "Lunch call?",
       date: "3/14/25",
       excerpt: "Hey Abdullah, Think you'll be free for a lunchtime chat sometime soon? I've got Thursday, Marc...",
@@ -121,7 +121,7 @@ export default function Mail({ windowId }) {
     {
       id: 5,
       sender: "Ayesha Khan",
-      avatar: "/icons/PngItem_6452863.png",
+      avatar: "/icons/cow-face.png",
       subject: "Pick up from airport?",
       date: "3/10/25",
       excerpt: "Hi Abdullah! Hope all's well with you. I'm coming home tomorrow and was wondering if you mig...",
@@ -143,7 +143,7 @@ export default function Mail({ windowId }) {
     {
       id: 7,
       sender: "Zara Malik",
-      avatar: "/icons/PngItem_4409921.png",
+      avatar: "/icons/cow-face.png",
       subject: "Interpretation job follow-up",
       date: "3/3/25",
       excerpt: "Hey Abdullah, Thanks much for taking time to meet with me last week—super cool to hear a...",
