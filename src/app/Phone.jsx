@@ -108,7 +108,7 @@ export default function PhoneApp({ windowId }) {
   const [contacts, setContacts] = useState([
     {
       id: "chris",
-      name: "Chris",
+      name: "Bilal Ahmed",
       avatar: "/icons/PngItem_4082636.png",
       avatarBg: "bg-red-100 dark:bg-red-950/60",
       device: "mobile",
@@ -116,14 +116,14 @@ export default function PhoneApp({ windowId }) {
       time: "Yesterday",
       dateLabel: "Yesterday",
       isOutgoing: false,
-      email: "chris@icloud.com",
+      email: "bilal.ahmed@icloud.com",
       history: [
         { type: "Incoming Call", time: "Yesterday - 1:45 PM", duration: "10 mins 15 secs" }
       ]
     },
     {
       id: "guillermo",
-      name: "Guillermo Castillo",
+      name: "Ayesha Khan",
       avatar: "/icons/PngItem_6452863.png",
       avatarBg: "bg-orange-200 dark:bg-orange-950/60",
       device: "iPhone",
@@ -131,7 +131,7 @@ export default function PhoneApp({ windowId }) {
       time: "9:30 AM",
       dateLabel: "Today",
       isOutgoing: true,
-      email: "guillermo.c@apple.com",
+      email: "ayesha.khan@icloud.com",
       history: [
         { type: "Outgoing Call", time: "Today - 9:30 AM", duration: "31 seconds" },
         { type: "Incoming Call", time: "Yesterday - 4:15 PM", duration: "2 mins 40 secs" },
@@ -140,7 +140,7 @@ export default function PhoneApp({ windowId }) {
     },
     {
       id: "rigo",
-      name: "Rigo Rangel",
+      name: "Hamza Sheikh",
       avatar: "/icons/PngItem_5031003.png",
       avatarBg: "bg-sky-100 dark:bg-sky-950/60",
       device: "mobile",
@@ -148,7 +148,7 @@ export default function PhoneApp({ windowId }) {
       time: "Yesterday",
       dateLabel: "Yesterday",
       isOutgoing: false,
-      email: "rigo.rangel@icloud.com",
+      email: "hamza.sheikh@icloud.com",
       history: [
         { type: "Incoming Call", time: "Yesterday - 5:20 PM", duration: "4 mins 12 secs" },
         { type: "Outgoing Call", time: "3/28/25 - 10:15 AM", duration: "1 min 5 secs" }
@@ -156,7 +156,7 @@ export default function PhoneApp({ windowId }) {
     },
     {
       id: "brian",
-      name: "Brian",
+      name: "Zara Malik",
       avatar: "/icons/PngItem_4409921.png",
       avatarBg: "bg-amber-100 dark:bg-amber-950/60",
       device: "mobile",
@@ -164,7 +164,7 @@ export default function PhoneApp({ windowId }) {
       time: "3/30/25",
       dateLabel: "3/30/25",
       isOutgoing: false,
-      email: "brian@apple.com",
+      email: "zara.malik@icloud.com",
       history: [
         { type: "Incoming Call", time: "3/30/25 - 2:00 PM", duration: "45 seconds" }
       ]
@@ -186,7 +186,7 @@ export default function PhoneApp({ windowId }) {
     },
     {
       id: "liz",
-      name: "Liz Dizon",
+      name: "Fatima Noor",
       avatar: "/icons/PngItem_4082636.png",
       avatarBg: "bg-rose-200 dark:bg-rose-950/60",
       device: "iPhone",
@@ -194,7 +194,7 @@ export default function PhoneApp({ windowId }) {
       time: "3/29/25",
       dateLabel: "3/29/25",
       isOutgoing: false,
-      email: "liz.dizon@hotmail.com",
+      email: "fatima.noor@icloud.com",
       history: [
         { type: "Incoming Call", time: "3/29/25 - 6:40 PM", duration: "5 mins 8 secs" }
       ]
@@ -203,10 +203,10 @@ export default function PhoneApp({ windowId }) {
 
   // Favourites list
   const favourites = [
-    { id: "chris", name: "Chris", avatar: "/icons/PngItem_4082636.png", bgClass: "bg-red-100 dark:bg-red-950/60", iconType: "phone" },
-    { id: "brian", name: "Brian", avatar: "/icons/PngItem_4409921.png", bgClass: "bg-amber-100 dark:bg-amber-950/60", iconType: "message" },
+    { id: "chris", name: "Bilal Ahmed", avatar: "/icons/PngItem_4082636.png", bgClass: "bg-red-100 dark:bg-red-950/60", iconType: "phone" },
+    { id: "brian", name: "Zara Malik", avatar: "/icons/PngItem_4409921.png", bgClass: "bg-amber-100 dark:bg-amber-950/60", iconType: "message" },
     { id: "mayuri", name: "Mariam", avatar: "/icons/PngItem_4608119.png", bgClass: "bg-purple-100 dark:bg-purple-950/60", iconType: "message" },
-    { id: "rigo_fav", name: "Rigo", avatar: "/icons/PngItem_5031003.png", bgClass: "bg-sky-100 dark:bg-sky-950/60", iconType: "video" }
+    { id: "rigo_fav", name: "Hamza", avatar: "/icons/PngItem_5031003.png", bgClass: "bg-sky-100 dark:bg-sky-950/60", iconType: "video" }
   ];
 
   // Handle contact selection

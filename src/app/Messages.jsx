@@ -74,22 +74,22 @@ export default function Messages({ windowId }) {
 
   // Mock Pinned Contacts
   const pinnedContacts = [
-    { id: "ashley", name: "Ashley", avatar: "/icons/PngItem_4082636.png", bg: "bg-red-100 dark:bg-red-950/40", tip: "Did the kids finish their homework?", hasUnread: true, isImage: true },
-    { id: "dawn", name: "Dawn", avatar: "/icons/PngItem_4409921.png", bg: "bg-amber-100 dark:bg-amber-950/40", isImage: true },
-    { id: "rico", name: "Rico Family", avatar: "/icons/PngItem_4608119.png", bg: "bg-sky-100 dark:bg-sky-950/40", hasUnread: true, isImage: true },
-    { id: "olivia", name: "Olivia", avatar: "/icons/PngItem_5031003.png", bg: "bg-purple-100 dark:bg-purple-950/40", badge: "🌈", hasUnread: true, isImage: true },
-    { id: "will", name: "Will", avatar: "/icons/PngItem_6304991.png", bg: "bg-green-100 dark:bg-green-950/40", badge: "❤️", isImage: true },
+    { id: "ashley", name: "Bilal Ahmed", avatar: "/icons/PngItem_4082636.png", bg: "bg-red-100 dark:bg-red-950/40", tip: "Did the kids finish their homework?", hasUnread: true, isImage: true },
+    { id: "dawn", name: "Mariam Siddiqui", avatar: "/icons/PngItem_4409921.png", bg: "bg-amber-100 dark:bg-amber-950/40", isImage: true },
+    { id: "rico", name: "Zainab Tariq", avatar: "/icons/PngItem_4608119.png", bg: "bg-sky-100 dark:bg-sky-950/40", hasUnread: true, isImage: true },
+    { id: "olivia", name: "Fatima Noor", avatar: "/icons/PngItem_5031003.png", bg: "bg-purple-100 dark:bg-purple-950/40", badge: "🌈", hasUnread: true, isImage: true },
+    { id: "will", name: "Hamza", avatar: "/icons/PngItem_6304991.png", bg: "bg-green-100 dark:bg-green-950/40", badge: "❤️", isImage: true },
     { id: "animation", name: "Animation Team", avatar: "/icons/PngItem_6452863.png", bg: "bg-orange-200 dark:bg-orange-950/40", isImage: true },
     { id: "foodie", name: "Foodie Friends", avatar: "/icons/PngItem_4082636.png", bg: "bg-teal-200 dark:bg-teal-950/40", isImage: true },
     { id: "hiker", name: "Hiker Neighbors", avatar: "/icons/PngItem_4409921.png", bg: "bg-blue-200 dark:bg-blue-950/40", isImage: true },
-    { id: "aileen", name: "Aileen & Rich", avatar: "/icons/PngItem_4608119.png", bg: "bg-rose-200 dark:bg-rose-950/40", isImage: true }
+    { id: "aileen", name: "Ali & Fatima", avatar: "/icons/PngItem_4608119.png", bg: "bg-rose-200 dark:bg-rose-950/40", isImage: true }
   ];
 
   // Conversations and Chat History
   const [conversations, setConversations] = useState([
     {
       id: "orkun",
-      name: "Orkun Kucuksevim",
+      name: "Ali Raza",
       avatar: "/icons/PngItem_4608119.png",
       avatarBg: "bg-orange-100 dark:bg-orange-950/40",
       isImage: true,
@@ -97,18 +97,18 @@ export default function Messages({ windowId }) {
       isGroup: false,
       colorTheme: "blue", // SMS Style
       messages: [
-        { id: 1, sender: "Orkun", text: "For family game night Friday, could we borrow some puzzles, please?", time: "Sunday 10:20 AM" },
+        { id: 1, sender: "Ali", text: "For family game night Friday, could we borrow some puzzles, please?", time: "Sunday 10:20 AM" },
         { id: 2, sender: "me", text: "Like a jigsaw puzzle or the wood and metal brain teasers?", time: "Sunday 10:22 AM" },
-        { id: 3, sender: "Orkun", text: "Oh! 🧠 I forgot that you collect all kinds of puzzles", time: "Sunday 10:23 AM" },
-        { id: 4, sender: "Orkun", text: "Let's stick with the jigsaws for now", time: "Sunday 10:24 AM" },
+        { id: 3, sender: "Ali", text: "Oh! 🧠 I forgot that you collect all kinds of puzzles", time: "Sunday 10:23 AM" },
+        { id: 4, sender: "Ali", text: "Let's stick with the jigsaws for now", time: "Sunday 10:24 AM" },
         { id: 5, sender: "me", text: "Anytime, neighbor", time: "Sunday 10:25 AM" },
         { id: 6, sender: "me", text: "I have the perfect puzzle for you to challenge the kids", time: "Sunday 10:26 AM" },
         { id: 7, sender: "me", image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800", time: "Sunday 10:27 AM" },
         { id: 8, sender: "me", text: "But only if you carefully count all 1000 pieces before returning it 😜", time: "Sunday 10:28 AM" },
-        { id: 9, sender: "Orkun", text: "Hmm. Maybe just a 500 piece one? 😂", time: "Sunday 10:30 AM" },
-        { id: 10, sender: "Orkun", text: "Or I can just put the kids on one?", time: "Sunday 10:31 AM" },
+        { id: 9, sender: "Ali", text: "Hmm. Maybe just a 500 piece one? 😂", time: "Sunday 10:30 AM" },
+        { id: 10, sender: "Ali", text: "Or I can just put the kids on one?", time: "Sunday 10:31 AM" },
         { id: 11, sender: "me", text: "Come by if you want them", time: "Sunday 10:32 AM", isRead: true },
-        { id: 12, sender: "Orkun", text: "Thanks for the puzzles!", time: "Sunday 10:35 AM" }
+        { id: 12, sender: "Ali", text: "Thanks for the puzzles!", time: "Sunday 10:35 AM" }
       ]
     },
     {
@@ -121,15 +121,15 @@ export default function Messages({ windowId }) {
       isGroup: true,
       colorTheme: "blue", // iMessage Style
       messages: [
-        { id: 1, sender: "Xiaomeng Zhong", text: "Oh, wow! Where 🌍 ⁉️", time: "Sunday 9:30 AM" },
+        { id: 1, sender: "Ayesha Khan", text: "Oh, wow! Where 🌍 ⁉️", time: "Sunday 9:30 AM" },
         { id: 2, sender: "me", text: "They're on a secret mission...", time: "Sunday 9:32 AM", isRead: true },
-        { id: 3, sender: "Orkun", text: "Give us a clue!", time: "Sunday 9:35 AM", reaction: "😂 HAHA" },
+        { id: 3, sender: "Ali", text: "Give us a clue!", time: "Sunday 9:35 AM", reaction: "😂 HAHA" },
         { id: 4, sender: "Hiker Neighbors", image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600", time: "Sunday 9:40 AM" }
       ]
     },
     {
       id: "trev",
-      name: "Trev Smith",
+      name: "Hamza Sheikh",
       avatar: "/icons/PngItem_6452863.png",
       avatarBg: "bg-amber-100 dark:bg-amber-950/40",
       isImage: true,
@@ -137,7 +137,7 @@ export default function Messages({ windowId }) {
       isGroup: false,
       colorTheme: "blue",
       messages: [
-        { id: 1, sender: "Trev", text: "Gotcha covered!", time: "Yesterday 4:15 PM" }
+        { id: 1, sender: "Hamza", text: "Gotcha covered!", time: "Yesterday 4:15 PM" }
       ]
     },
     {
@@ -155,7 +155,7 @@ export default function Messages({ windowId }) {
     },
     {
       id: "xiaomeng",
-      name: "Xiaomeng Zhong",
+      name: "Ayesha Khan",
       avatar: "/icons/PngItem_5031003.png",
       avatarBg: "bg-purple-100 dark:bg-purple-950/40",
       isImage: true,
@@ -163,12 +163,12 @@ export default function Messages({ windowId }) {
       isGroup: false,
       colorTheme: "blue",
       messages: [
-        { id: 1, sender: "Xiaomeng", text: "Now you've got me thinking about my next vacation", time: "Sunday 1:05 PM" }
+        { id: 1, sender: "Ayesha", text: "Now you've got me thinking about my next vacation", time: "Sunday 1:05 PM" }
       ]
     },
     {
       id: "jasmine",
-      name: "Jasmine Garcia",
+      name: "Fatima Noor",
       avatar: "/icons/PngItem_4082636.png",
       avatarBg: "bg-rose-100 dark:bg-rose-950/40",
       isImage: true,
@@ -176,12 +176,12 @@ export default function Messages({ windowId }) {
       isGroup: false,
       colorTheme: "blue",
       messages: [
-        { id: 1, sender: "Jasmine", text: "See you tomorrow!", time: "Saturday 5:30 PM" }
+        { id: 1, sender: "Fatima", text: "See you tomorrow!", time: "Saturday 5:30 PM" }
       ]
     },
     {
       id: "nisha",
-      name: "Nisha Kumar",
+      name: "Zara Malik",
       avatar: "/icons/PngItem_5031003.png",
       avatarBg: "bg-teal-100 dark:bg-teal-950/40",
       isImage: true,
@@ -189,7 +189,7 @@ export default function Messages({ windowId }) {
       isGroup: false,
       colorTheme: "blue",
       messages: [
-        { id: 1, sender: "Nisha", text: "Cool... I'll be by just before 7 to drop off the birthday cake 🎂", time: "Friday 6:00 PM" }
+        { id: 1, sender: "Zara", text: "Cool... I'll be by just before 7 to drop off the birthday cake 🎂", time: "Friday 6:00 PM" }
       ]
     }
   ]);
@@ -448,7 +448,7 @@ export default function Messages({ windowId }) {
                   {activeChat.isGroup && !isMe && (
                     <div className="w-5 h-5 rounded-full overflow-hidden flex items-center justify-center shrink-0 mb-0.5 bg-gray-200 p-0.5">
                       <img 
-                        src={msg.sender === "Xiaomeng Zhong" ? "/icons/PngItem_5031003.png" : "/icons/PngItem_4608119.png"} 
+                        src={msg.sender === "Ayesha Khan" ? "/icons/PngItem_5031003.png" : "/icons/PngItem_4608119.png"} 
                         alt={msg.sender} 
                         className="w-full h-full object-contain" 
                         />

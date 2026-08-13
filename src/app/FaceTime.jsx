@@ -123,7 +123,7 @@ export default function FaceTime({ windowId }) {
   const contacts = [
     {
       id: "trev",
-      name: "Trev",
+      name: "Hamza Sheikh",
       avatar: "/icons/PngItem_5031003.png",
       sub: "Suggested",
       type: "audio",
@@ -133,7 +133,7 @@ export default function FaceTime({ windowId }) {
     },
     {
       id: "christian",
-      name: "Christian",
+      name: "Ali Raza",
       avatar: "/icons/PngItem_4082636.png",
       sub: "Video 9:39 AM",
       type: "video",
@@ -143,7 +143,7 @@ export default function FaceTime({ windowId }) {
     },
     {
       id: "andre",
-      name: "Andre",
+      name: "Bilal Ahmed",
       avatar: "/icons/PngItem_4608119.png",
       sub: "Video 9:20 AM",
       type: "video",
@@ -153,7 +153,7 @@ export default function FaceTime({ windowId }) {
     },
     {
       id: "brian",
-      name: "Brian",
+      name: "Zara Malik",
       avatar: "/icons/PngItem_4409921.png",
       sub: "Audio Yesterday",
       type: "audio",
@@ -163,7 +163,7 @@ export default function FaceTime({ windowId }) {
     },
     {
       id: "will",
-      name: "Will",
+      name: "Fatima Noor",
       avatar: "/icons/PngItem_6304991.png",
       sub: "Suggested",
       type: "audio",
@@ -173,7 +173,7 @@ export default function FaceTime({ windowId }) {
     },
     {
       id: "guillermo",
-      name: "Guillermo Castillo,...",
+      name: "Ayesha Khan",
       avatar: "/icons/PngItem_6452863.png",
       sub: "Suggested",
       type: "video",
